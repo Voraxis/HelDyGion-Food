@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Website Recipe Form</title>
+</head>
+
+<body style="background-image: url(./Images/SignInPage/giphy.gif); background-repeat: no-repeat; background-size: cover; image-rendering: pixelated;">
+    <div style="background-color:hsla(12, 100%, 78%, 0.537) ; padding: 30px;">
+        <h1 align="center">🍳Kitchen Master Portal</h1>
+
+        <p class="h2" align="center">Complete Database Registration & Profile Management</p>
+    </div><br>
+
+
+    <div id="container" style="width: 700px; margin: auto; background-color: hsla(12, 100%, 78%, 0.537); border: solid black;">
+        <form action="./HomeLogInPage.html">
+
+
+            <div class="mt-5">
+                <p class="h2" style="margin: 20px;">♟️ <b>Create Chef Account</b></p>
+            </div>
+
+
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" class="form-control" placeholder="Yuri" name="fname" required>
+                    </div>
+                    <div class="col">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Rocero" name="lname">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Enter Email</label>
+                        <input type="text" class="form-control" placeholder="Enter email" name="email" required>
+                    </div>
+                    <div class="col">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter password" name="password">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col">
+                        <label for="bday">Date of Birth</label>
+                        <input type="date" id="bday" class="form-control" name="bday" required>
+                    </div>
+                    <div class="col">
+                        <label for="num">Phone Number</label>
+                        <input type="tel" class="form-control" placeholder="123-456-7890" name="num">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Cooking Level</label>
+
+                <div class="form-control">
+                    <label class="inline-group"><input type="radio" id="radio" name="level"
+                            value="Begginer">Begginer</label>
+                    <label class="inline-group"><input type="radio" id="radio" name="level"
+                            value="Intermediate">Intermediate</label>
+                    <label class="inline-group"><input type="radio" id="radio" name="level"
+                            value="pro">Professional</label>
+
+                </div>
+            </div>
+
+            <div class="form-group pt-3">
+                <label for="bio">Chef Biography</label><br>
+                <textarea class="form-control" id="bio" name="bio" rows="5"
+                    placeholder="Tell us about your culinary journey...."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="background-color: rgb(67, 122, 67);">Register</button>
+            <button type="reset" class="btn btn-primary" style="background-color: grey;">Clear all</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
